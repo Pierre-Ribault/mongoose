@@ -1,0 +1,4 @@
+cd experiments/test/input
+sudo ./experiment.sh
+
+results are inside output folder

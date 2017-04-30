@@ -1,0 +1,113 @@
+gpg: ./trustdb.gpg: trustdb created
+gpg: Signature made Sat Apr 22 18:38:38 2017 EDT using DSA key ID D74C5F22
+gpg: Good signature from "Test one (pp=def) <one@example.com>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 289B 0EF1 D105 E124 B6F6  2602 0EF7 7096 D74C 5F22
+gpg: Signature made Sat Apr 22 18:38:38 2017 EDT using DSA key ID D74C5F22
+gpg: Good signature from "Test one (pp=def) <one@example.com>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 289B 0EF1 D105 E124 B6F6  2602 0EF7 7096 D74C 5F22
+gpg: Signature made Sat Apr 22 18:38:38 2017 EDT using DSA key ID D74C5F22
+gpg: Good signature from "Test one (pp=def) <one@example.com>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 289B 0EF1 D105 E124 B6F6  2602 0EF7 7096 D74C 5F22
+gpg: Signature made Sat Apr 22 18:38:38 2017 EDT using DSA key ID D74C5F22
+gpg: Good signature from "Test one (pp=def) <one@example.com>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 289B 0EF1 D105 E124 B6F6  2602 0EF7 7096 D74C 5F22
+gpg: Signature made Sat Apr 22 18:38:38 2017 EDT using DSA key ID D74C5F22
+gpg: Good signature from "Test one (pp=def) <one@example.com>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 289B 0EF1 D105 E124 B6F6  2602 0EF7 7096 D74C 5F22
+gpg: Signature made Sat Apr 22 18:38:39 2017 EDT using DSA key ID D74C5F22
+gpg: Good signature from "Test one (pp=def) <one@example.com>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 289B 0EF1 D105 E124 B6F6  2602 0EF7 7096 D74C 5F22
+gpg: Signature made Sat Apr 22 18:38:39 2017 EDT using DSA key ID D74C5F22
+gpg: Good signature from "Test one (pp=def) <one@example.com>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 289B 0EF1 D105 E124 B6F6  2602 0EF7 7096 D74C 5F22
+gpg: WARNING: unsafe permissions on homedir `.'
+gpg: WARNING: unsafe permissions on homedir `.'
+gpg: WARNING: digest algorithm MD5 is deprecated
+gpg: please see http://www.gnupg.org/faq/weak-digest-algos.html for more information
+gpg: Signature made Sat Apr 22 18:38:39 2017 EDT using RSA key ID ECABF51D
+gpg: WARNING: digest algorithm MD5 is deprecated
+gpg: please see http://www.gnupg.org/faq/weak-digest-algos.html for more information
+gpg: Good signature from "Test three (no pp) <three@example.com>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: CF23 490B 0F78 B850 BBBC  7369 D120 B626 ECAB F51D
+gpg: WARNING: unsafe permissions on homedir `.'
+gpg: Signature made Sat Apr 22 18:38:39 2017 EDT using RSA key ID ECABF51D
+gpg: Good signature from "Test three (no pp) <three@example.com>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: CF23 490B 0F78 B850 BBBC  7369 D120 B626 ECAB F51D
+gpg: Signature made Sat Apr 22 18:38:39 2017 EDT using DSA key ID D74C5F22
+gpg: Good signature from "Test one (pp=def) <one@example.com>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 289B 0EF1 D105 E124 B6F6  2602 0EF7 7096 D74C 5F22
+gpg: WARNING: unsafe permissions on homedir `.'
+gpg: Signature made Sat Apr 22 18:38:39 2017 EDT using RSA key ID ECABF51D
+gpg: Good signature from "Test three (no pp) <three@example.com>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: CF23 490B 0F78 B850 BBBC  7369 D120 B626 ECAB F51D
+gpg: Signature made Sat Apr 22 18:38:39 2017 EDT using DSA key ID D74C5F22
+gpg: Good signature from "Test one (pp=def) <one@example.com>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 289B 0EF1 D105 E124 B6F6  2602 0EF7 7096 D74C 5F22
+gpg: WARNING: unsafe permissions on homedir `.'
+gpg: Signature made Sat Apr 22 18:38:39 2017 EDT using RSA key ID ECABF51D
+gpg: Good signature from "Test three (no pp) <three@example.com>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: CF23 490B 0F78 B850 BBBC  7369 D120 B626 ECAB F51D
+gpg: Signature made Sat Apr 22 18:38:39 2017 EDT using DSA key ID D74C5F22
+gpg: Good signature from "Test one (pp=def) <one@example.com>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 289B 0EF1 D105 E124 B6F6  2602 0EF7 7096 D74C 5F22
+gpg: WARNING: unsafe permissions on homedir `.'
+gpg: Signature made Sat Apr 22 18:38:39 2017 EDT using RSA key ID ECABF51D
+gpg: Good signature from "Test three (no pp) <three@example.com>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: CF23 490B 0F78 B850 BBBC  7369 D120 B626 ECAB F51D
+gpg: Signature made Sat Apr 22 18:38:39 2017 EDT using DSA key ID D74C5F22
+gpg: Good signature from "Test one (pp=def) <one@example.com>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 289B 0EF1 D105 E124 B6F6  2602 0EF7 7096 D74C 5F22
+gpg: WARNING: unsafe permissions on homedir `.'
+gpg: Signature made Sat Apr 22 18:38:39 2017 EDT using RSA key ID ECABF51D
+gpg: Good signature from "Test three (no pp) <three@example.com>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: CF23 490B 0F78 B850 BBBC  7369 D120 B626 ECAB F51D
+gpg: Signature made Sat Apr 22 18:38:39 2017 EDT using DSA key ID D74C5F22
+gpg: Good signature from "Test one (pp=def) <one@example.com>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 289B 0EF1 D105 E124 B6F6  2602 0EF7 7096 D74C 5F22
+gpg: WARNING: unsafe permissions on homedir `.'
+gpg: Signature made Sat Apr 22 18:38:39 2017 EDT using RSA key ID ECABF51D
+gpg: Good signature from "Test three (no pp) <three@example.com>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: CF23 490B 0F78 B850 BBBC  7369 D120 B626 ECAB F51D
+gpg: Signature made Sat Apr 22 18:38:39 2017 EDT using DSA key ID D74C5F22
+gpg: Good signature from "Test one (pp=def) <one@example.com>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 289B 0EF1 D105 E124 B6F6  2602 0EF7 7096 D74C 5F22

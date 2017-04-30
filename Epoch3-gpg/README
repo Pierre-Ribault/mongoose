@@ -1,0 +1,11 @@
+cd experiments/gnupg
+./experiment.sh
+
+* In case of any error for not installing gpg:
+cd source/gnupg-1.4.13
+./configure
+make
+
+##############
+I don't think you care about results of cache
+but results are inside experiments/gnupg/testrun/output/spy.output

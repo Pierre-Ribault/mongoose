@@ -1,0 +1,361 @@
+verify.test: checking bogus signature 1
+gpg: no valid OpenPGP data found.
+gpg: the signature could not be verified.
+Please remember that the signature file (.sig or .asc)
+should be the first file given on the command line.
+verify.test: checking bogus signature 2
+gpg: invalid marker packet
+gpg: no signature found
+gpg: the signature could not be verified.
+Please remember that the signature file (.sig or .asc)
+should be the first file given on the command line.
+
+verify.test: checking: msg_ols_asc
+gpg: Signature made Mon Mar  6 10:16:42 2006 EST using DSA key ID 68697734
+gpg: please do a --check-trustdb
+gpg: Good signature from "Alfa Test (demo key) <alfa@example.net>"
+gpg:                 aka "Alpha Test (demo key) <alpha@example.net>"
+gpg:                 aka "Alice (demo key)"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: A0FF 4590 BB61 22ED EF6E  3C54 2D72 7CC7 6869 7734
+
+verify.test: checking: msg_cols_asc
+gpg: Signature made Mon Mar  6 10:11:13 2006 EST using DSA key ID 68697734
+gpg: please do a --check-trustdb
+gpg: Good signature from "Alfa Test (demo key) <alfa@example.net>"
+gpg:                 aka "Alpha Test (demo key) <alpha@example.net>"
+gpg:                 aka "Alice (demo key)"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: A0FF 4590 BB61 22ED EF6E  3C54 2D72 7CC7 6869 7734
+
+verify.test: checking: msg_sl_asc
+gpg: old style (PGP 2.x) signature
+gpg: Signature made Mon Mar  6 10:16:42 2006 EST using DSA key ID 68697734
+gpg: please do a --check-trustdb
+gpg: Good signature from "Alfa Test (demo key) <alfa@example.net>"
+gpg:                 aka "Alpha Test (demo key) <alpha@example.net>"
+gpg:                 aka "Alice (demo key)"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: A0FF 4590 BB61 22ED EF6E  3C54 2D72 7CC7 6869 7734
+
+verify.test: checking: bad_ls_asc
+gpg: old style (PGP 2.x) signature
+gpg: can't handle this ambiguous signature data
++ linefeed
++ echo
+
++ info checking: bad_fols_asc
++ echo verify.test: checking: bad_fols_asc
+verify.test: checking: bad_fols_asc
++ [ -n  ]
++ eval (IFS=; echo "$bad_fols_asc")
++ IFS=
++ echo -----BEGIN PGP MESSAGE-----
+
+rF1iDG1zZy51bnNpZ25lZEQMY0x0aW1lc2hhcmluZywgbjoKCUFuIGFjY2VzcyBt
+ZXRob2Qgd2hlcmVieSBvbmUgY29tcHV0ZXIgYWJ1c2VzIG1hbnkgcGVvcGxlLgqQ
+DQMAAhEtcnzHaGl3NAGtAQdiA21zZ0QMUlpJIHRoaW5rIHRoYXQgYWxsIHJpZ2h0
+LXRoaW5raW5nIHBlb3BsZSBpbiB0aGlzIGNvdW50cnkgYXJlIHNpY2sgYW5kCnRp
+cmVkIG9mIGJlaW5nIHRvbGQgdGhhdCBvcmRpbmFyeSBkZWNlbnQgcGVvcGxlIGFy
+ZSBmZWQgdXAgaW4gdGhpcwpjb3VudHJ5IHdpdGggYmVpbmcgc2ljayBhbmQgdGly
+ZWQuICBJJ20gY2VydGFpbmx5IG5vdC4gIEJ1dCBJJ20Kc2ljayBhbmQgdGlyZWQg
+b2YgYmVpbmcgdG9sZCB0aGF0IEkgYW0uCi0gTW9udHkgUHl0aG9uCog/AwUARAxS
+Wi1yfMdoaXc0EQJHggCgmUQZNj5seMPYdi4KLEtAKaTTWlsAoIiOTMs4CaRk2bQP
+yW5Pvxz/XHjl
+=UNM4
+-----END PGP MESSAGE-----
++ set +x
+gpg: WARNING: multiple plaintexts seen
+gpg: handle plaintext failed: unexpected data
+gpg: can't handle this ambiguous signature data
++ linefeed
++ echo
+
++ info checking: bad_olsf_asc
++ echo verify.test: checking: bad_olsf_asc
+verify.test: checking: bad_olsf_asc
++ [ -n  ]
++ eval (IFS=; echo "$bad_olsf_asc")
++ IFS=
++ echo -----BEGIN PGP MESSAGE-----
+
+kA0DAAIRLXJ8x2hpdzQBrQEHYgNtc2dEDFJaSSB0aGluayB0aGF0IGFsbCByaWdo
+dC10aGlua2luZyBwZW9wbGUgaW4gdGhpcyBjb3VudHJ5IGFyZSBzaWNrIGFuZAp0
+aXJlZCBvZiBiZWluZyB0b2xkIHRoYXQgb3JkaW5hcnkgZGVjZW50IHBlb3BsZSBh
+cmUgZmVkIHVwIGluIHRoaXMKY291bnRyeSB3aXRoIGJlaW5nIHNpY2sgYW5kIHRp
+cmVkLiAgSSdtIGNlcnRhaW5seSBub3QuICBCdXQgSSdtCnNpY2sgYW5kIHRpcmVk
+IG9mIGJlaW5nIHRvbGQgdGhhdCBJIGFtLgotIE1vbnR5IFB5dGhvbgqIPwMFAEQM
+UlotcnzHaGl3NBECR4IAoJlEGTY+bHjD2HYuCixLQCmk01pbAKCIjkzLOAmkZNm0
+D8luT78c/1x45axdYgxtc2cudW5zaWduZWREDGNMdGltZXNoYXJpbmcsIG46CglB
+biBhY2Nlc3MgbWV0aG9kIHdoZXJlYnkgb25lIGNvbXB1dGVyIGFidXNlcyBtYW55
+IHBlb3BsZS4K
+=3gnG
+-----END PGP MESSAGE-----
++ set +x
+gpg: WARNING: multiple plaintexts seen
+gpg: handle plaintext failed: unexpected data
+gpg: Signature made Mon Mar  6 10:16:42 2006 EST using DSA key ID 68697734
+gpg: please do a --check-trustdb
+gpg: BAD signature from "Alfa Test (demo key) <alfa@example.net>"
++ linefeed
++ echo
+
++ info checking: msg_olsols_asc_multiple
++ echo verify.test: checking: msg_olsols_asc_multiple
+verify.test: checking: msg_olsols_asc_multiple
++ [ -n  ]
++ eval (IFS=; echo "$msg_olsols_asc_multiple")
++ IFS=
++ echo -----BEGIN PGP MESSAGE-----
+
+kA0DAAIRLXJ8x2hpdzQBrQEHYgNtc2dEDFJaSSB0aGluayB0aGF0IGFsbCByaWdo
+dC10aGlua2luZyBwZW9wbGUgaW4gdGhpcyBjb3VudHJ5IGFyZSBzaWNrIGFuZAp0
+aXJlZCBvZiBiZWluZyB0b2xkIHRoYXQgb3JkaW5hcnkgZGVjZW50IHBlb3BsZSBh
+cmUgZmVkIHVwIGluIHRoaXMKY291bnRyeSB3aXRoIGJlaW5nIHNpY2sgYW5kIHRp
+cmVkLiAgSSdtIGNlcnRhaW5seSBub3QuICBCdXQgSSdtCnNpY2sgYW5kIHRpcmVk
+IG9mIGJlaW5nIHRvbGQgdGhhdCBJIGFtLgotIE1vbnR5IFB5dGhvbgqIPwMFAEQM
+UlotcnzHaGl3NBECR4IAoJlEGTY+bHjD2HYuCixLQCmk01pbAKCIjkzLOAmkZNm0
+D8luT78c/1x45ZANAwACES1yfMdoaXc0Aa0BB2IDbXNnRAxSWkkgdGhpbmsgdGhh
+dCBhbGwgcmlnaHQtdGhpbmtpbmcgcGVvcGxlIGluIHRoaXMgY291bnRyeSBhcmUg
+c2ljayBhbmQKdGlyZWQgb2YgYmVpbmcgdG9sZCB0aGF0IG9yZGluYXJ5IGRlY2Vu
+dCBwZW9wbGUgYXJlIGZlZCB1cCBpbiB0aGlzCmNvdW50cnkgd2l0aCBiZWluZyBz
+aWNrIGFuZCB0aXJlZC4gIEknbSBjZXJ0YWlubHkgbm90LiAgQnV0IEknbQpzaWNr
+IGFuZCB0aXJlZCBvZiBiZWluZyB0b2xkIHRoYXQgSSBhbS4KLSBNb250eSBQeXRo
+b24KiD8DBQBEDFJaLXJ8x2hpdzQRAkeCAKCZRBk2Pmx4w9h2LgosS0AppNNaWwCg
+iI5MyzgJpGTZtA/Jbk+/HP9ceOU=
+=8nLN
+-----END PGP MESSAGE-----
++ ../g10/gpg --no-permission-warning --homedir . --verify --allow-multiple-messages x
+gpg: WARNING: multiple plaintexts seen
+gpg: Signature made Mon Mar  6 10:16:42 2006 EST using DSA key ID 68697734
+gpg: please do a --check-trustdb
+gpg: Good signature from "Alfa Test (demo key) <alfa@example.net>"
+gpg:                 aka "Alpha Test (demo key) <alpha@example.net>"
+gpg:                 aka "Alice (demo key)"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: A0FF 4590 BB61 22ED EF6E  3C54 2D72 7CC7 6869 7734
+gpg: Signature made Mon Mar  6 10:16:42 2006 EST using DSA key ID 68697734
+gpg: Good signature from "Alfa Test (demo key) <alfa@example.net>"
+gpg:                 aka "Alpha Test (demo key) <alpha@example.net>"
+gpg:                 aka "Alice (demo key)"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: A0FF 4590 BB61 22ED EF6E  3C54 2D72 7CC7 6869 7734
++ set +x
+gpg: WARNING: multiple plaintexts seen
+gpg: handle plaintext failed: unexpected data
+gpg: Signature made Mon Mar  6 10:16:42 2006 EST using DSA key ID 68697734
+gpg: please do a --check-trustdb
+gpg: BAD signature from "Alfa Test (demo key) <alfa@example.net>"
++ linefeed
++ echo
+
++ info checking: msg_oolss_asc
++ echo verify.test: checking: msg_oolss_asc
+verify.test: checking: msg_oolss_asc
++ [ -n  ]
++ eval (IFS=; echo "$msg_oolss_asc")
++ IFS=
++ echo -----BEGIN PGP MESSAGE-----
+
+kA0DAAIRLXJ8x2hpdzQBkA0DAAIRLXJ8x2hpdzQBrQEHYgNtc2dEDFJaSSB0aGlu
+ayB0aGF0IGFsbCByaWdodC10aGlua2luZyBwZW9wbGUgaW4gdGhpcyBjb3VudHJ5
+IGFyZSBzaWNrIGFuZAp0aXJlZCBvZiBiZWluZyB0b2xkIHRoYXQgb3JkaW5hcnkg
+ZGVjZW50IHBlb3BsZSBhcmUgZmVkIHVwIGluIHRoaXMKY291bnRyeSB3aXRoIGJl
+aW5nIHNpY2sgYW5kIHRpcmVkLiAgSSdtIGNlcnRhaW5seSBub3QuICBCdXQgSSdt
+CnNpY2sgYW5kIHRpcmVkIG9mIGJlaW5nIHRvbGQgdGhhdCBJIGFtLgotIE1vbnR5
+IFB5dGhvbgqIPwMFAEQMUlotcnzHaGl3NBECR4IAoJlEGTY+bHjD2HYuCixLQCmk
+01pbAKCIjkzLOAmkZNm0D8luT78c/1x45Yg/AwUARAxSWi1yfMdoaXc0EQJHggCg
+mUQZNj5seMPYdi4KLEtAKaTTWlsAoIiOTMs4CaRk2bQPyW5Pvxz/XHjl
+=KVw5
+-----END PGP MESSAGE-----
++ ../g10/gpg --no-permission-warning --homedir . --verify x
+gpg: Signature made Mon Mar  6 10:16:42 2006 EST using DSA key ID 68697734
+gpg: please do a --check-trustdb
+gpg: Good signature from "Alfa Test (demo key) <alfa@example.net>"
+gpg:                 aka "Alpha Test (demo key) <alpha@example.net>"
+gpg:                 aka "Alice (demo key)"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: A0FF 4590 BB61 22ED EF6E  3C54 2D72 7CC7 6869 7734
+gpg: Signature made Mon Mar  6 10:16:42 2006 EST using DSA key ID 68697734
+gpg: Good signature from "Alfa Test (demo key) <alfa@example.net>"
+gpg:                 aka "Alpha Test (demo key) <alpha@example.net>"
+gpg:                 aka "Alice (demo key)"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: A0FF 4590 BB61 22ED EF6E  3C54 2D72 7CC7 6869 7734
++ linefeed
++ echo
+
++ info checking: bad_ools_asc
++ echo verify.test: checking: bad_ools_asc
+verify.test: checking: bad_ools_asc
++ [ -n  ]
++ eval (IFS=; echo "$bad_ools_asc")
++ IFS=
++ echo -----BEGIN PGP MESSAGE-----
+
+kA0DAAIRLXJ8x2hpdzQBkA0DAAIRLXJ8x2hpdzQBrQEHYgNtc2dEDFJaSSB0aGlu
+ayB0aGF0IGFsbCByaWdodC10aGlua2luZyBwZW9wbGUgaW4gdGhpcyBjb3VudHJ5
+IGFyZSBzaWNrIGFuZAp0aXJlZCBvZiBiZWluZyB0b2xkIHRoYXQgb3JkaW5hcnkg
+ZGVjZW50IHBlb3BsZSBhcmUgZmVkIHVwIGluIHRoaXMKY291bnRyeSB3aXRoIGJl
+aW5nIHNpY2sgYW5kIHRpcmVkLiAgSSdtIGNlcnRhaW5seSBub3QuICBCdXQgSSdt
+CnNpY2sgYW5kIHRpcmVkIG9mIGJlaW5nIHRvbGQgdGhhdCBJIGFtLgotIE1vbnR5
+IFB5dGhvbgqIPwMFAEQMUlotcnzHaGl3NBECR4IAoJlEGTY+bHjD2HYuCixLQCmk
+01pbAKCIjkzLOAmkZNm0D8luT78c/1x45Q==
+=1/ix
+-----END PGP MESSAGE-----
++ set +x
+gpg: number of one-pass packets does not match number of signature packets
+gpg: can't handle this ambiguous signature data
++ linefeed
++ echo
+
++ info checking: msg_cls_asc
++ echo verify.test: checking: msg_cls_asc
+verify.test: checking: msg_cls_asc
++ [ -n  ]
++ eval (IFS=; echo "$msg_cls_asc")
++ IFS=
++ echo -----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+I think that all right-thinking people in this country are sick and
+tired of being told that ordinary decent people are fed up in this
+country with being sick and tired.  I'm certainly not.  But I'm
+sick and tired of being told that I am.
+- - Monty Python
+-----BEGIN PGP SIGNATURE-----
+
+iD8DBQFEDVp1LXJ8x2hpdzQRAplUAKCMfpG3GPw/TLN52tosgXP5lNECkwCfQhAa
+emmev7IuQjWYrGF9Lxj+zj8=
+=qJsY
+-----END PGP SIGNATURE-----
++ ../g10/gpg --no-permission-warning --homedir . --verify x
+gpg: Signature made Tue Mar  7 05:03:33 2006 EST using DSA key ID 68697734
+gpg: please do a --check-trustdb
+gpg: Good signature from "Alfa Test (demo key) <alfa@example.net>"
+gpg:                 aka "Alpha Test (demo key) <alpha@example.net>"
+gpg:                 aka "Alice (demo key)"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: A0FF 4590 BB61 22ED EF6E  3C54 2D72 7CC7 6869 7734
++ linefeed
++ echo
+
++ info checking: msg_clss_asc
++ echo verify.test: checking: msg_clss_asc
+verify.test: checking: msg_clss_asc
++ [ -n  ]
++ eval (IFS=; echo "$msg_clss_asc")
++ IFS=
++ echo -----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+What is the difference between a Turing machine and the modern computer?
+It's the same as that between Hillary's ascent of Everest and the
+establishment of a Hilton on its peak.
+-----BEGIN PGP SIGNATURE-----
+
+iD8DBQFEDVz6LXJ8x2hpdzQRAtkGAKCeMhNbHnh339fpjNj9owsYcC4zBwCfYO5l
+2u+KEfXX0FKyk8SMzLjZ536IPwMFAUQNXPr+GAsdqeOwshEC2QYAoPOWAiQm0EF/
+FWIAQUplk7JWbyRKAJ92ZJyJpWfzb0yc1s7MY65r2qEHrg==
+=1Xvv
+-----END PGP SIGNATURE-----
++ ../g10/gpg --no-permission-warning --homedir . --verify x
+gpg: Signature made Tue Mar  7 05:14:18 2006 EST using DSA key ID 68697734
+gpg: please do a --check-trustdb
+gpg: Good signature from "Alfa Test (demo key) <alfa@example.net>"
+gpg:                 aka "Alpha Test (demo key) <alpha@example.net>"
+gpg:                 aka "Alice (demo key)"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: A0FF 4590 BB61 22ED EF6E  3C54 2D72 7CC7 6869 7734
+gpg: Signature made Tue Mar  7 05:14:18 2006 EST using DSA key ID A9E3B0B2
+gpg: Good signature from "Bob (demo key)"
+gpg:                 aka "Bravo Test (demo key) <bravo@example.net>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: D695 676B DCED CC2C DD61  52BC FE18 0B1D A9E3 B0B2
++ linefeed
++ echo
+
++ info checking: msg_clsclss_asc_multiple
++ echo verify.test: checking: msg_clsclss_asc_multiple
+verify.test: checking: msg_clsclss_asc_multiple
++ [ -n  ]
++ eval (IFS=; echo "$msg_clsclss_asc_multiple")
++ IFS=
++ echo -----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+I think that all right-thinking people in this country are sick and
+tired of being told that ordinary decent people are fed up in this
+country with being sick and tired.  I'm certainly not.  But I'm
+sick and tired of being told that I am.
+- - Monty Python
+-----BEGIN PGP SIGNATURE-----
+
+iD8DBQFEDVp1LXJ8x2hpdzQRAplUAKCMfpG3GPw/TLN52tosgXP5lNECkwCfQhAa
+emmev7IuQjWYrGF9Lxj+zj8=
+=qJsY
+-----END PGP SIGNATURE-----
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+What is the difference between a Turing machine and the modern computer?
+It's the same as that between Hillary's ascent of Everest and the
+establishment of a Hilton on its peak.
+-----BEGIN PGP SIGNATURE-----
+
+iD8DBQFEDVz6LXJ8x2hpdzQRAtkGAKCeMhNbHnh339fpjNj9owsYcC4zBwCfYO5l
+2u+KEfXX0FKyk8SMzLjZ536IPwMFAUQNXPr+GAsdqeOwshEC2QYAoPOWAiQm0EF/
+FWIAQUplk7JWbyRKAJ92ZJyJpWfzb0yc1s7MY65r2qEHrg==
+=1Xvv
+-----END PGP SIGNATURE-----
++ ../g10/gpg --no-permission-warning --homedir . --verify --allow-multiple-messages x
+gpg: Signature made Tue Mar  7 05:03:33 2006 EST using DSA key ID 68697734
+gpg: please do a --check-trustdb
+gpg: Good signature from "Alfa Test (demo key) <alfa@example.net>"
+gpg:                 aka "Alpha Test (demo key) <alpha@example.net>"
+gpg:                 aka "Alice (demo key)"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: A0FF 4590 BB61 22ED EF6E  3C54 2D72 7CC7 6869 7734
+gpg: WARNING: multiple plaintexts seen
+gpg: Signature made Tue Mar  7 05:14:18 2006 EST using DSA key ID 68697734
+gpg: Good signature from "Alfa Test (demo key) <alfa@example.net>"
+gpg:                 aka "Alpha Test (demo key) <alpha@example.net>"
+gpg:                 aka "Alice (demo key)"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: A0FF 4590 BB61 22ED EF6E  3C54 2D72 7CC7 6869 7734
+gpg: Signature made Tue Mar  7 05:14:18 2006 EST using DSA key ID A9E3B0B2
+gpg: Good signature from "Bob (demo key)"
+gpg:                 aka "Bravo Test (demo key) <bravo@example.net>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: D695 676B DCED CC2C DD61  52BC FE18 0B1D A9E3 B0B2
++ set +x
+gpg: Signature made Tue Mar  7 05:03:33 2006 EST using DSA key ID 68697734
+gpg: please do a --check-trustdb
+gpg: Good signature from "Alfa Test (demo key) <alfa@example.net>"
+gpg:                 aka "Alpha Test (demo key) <alpha@example.net>"
+gpg:                 aka "Alice (demo key)"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: A0FF 4590 BB61 22ED EF6E  3C54 2D72 7CC7 6869 7734
+gpg: WARNING: multiple plaintexts seen
+gpg: handle plaintext failed: unexpected data
++ linefeed
++ echo
+
++ resume_error
++ [ xno = xyes ]
++ defs_stop_on_error=no
++ defs_error_seen=no
