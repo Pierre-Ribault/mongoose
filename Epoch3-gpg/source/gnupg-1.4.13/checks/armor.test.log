@@ -1,0 +1,15 @@
+armor.test: checking: armored_key_8192
+gpg: key DE415B0E: public key "Susumu OSAWA <susumu-o@goforward.org>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+armor.test: importing: alpha_seckey
+gpg: key 68697734: secret key imported
+gpg: key 68697734: "Alfa Test (demo key) <alfa@example.net>" 1 new signature
+gpg: Total number processed: 1
+gpg:         new signatures: 1
+gpg:       secret keys read: 1
+gpg:   secret keys imported: 1
+armor.test: checking: nopad_armored_msg
+gpg: encrypted with RSA key, ID F409CD54
+gpg: encrypted with 1024-bit ELG-E key, ID 46A871F8, created 1999-03-08
+      "Alfa Test (demo key) <alfa@example.net>"
