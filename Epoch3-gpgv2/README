@@ -1,0 +1,4 @@
+The gpg file is also in this folder
+./spy -e PATH-TO-GPG -t 200 -s 10000 -p M:0x49465f -p S:0x494b10 -p R:0x493b60
+
+
