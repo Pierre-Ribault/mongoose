@@ -23,21 +23,19 @@ status "Running ./hello"
 (
     echo "H";
     echo "H";
-    sleep 1;
     echo "E";
     echo "E";
-    sleep 1;
+
     echo "L";
     echo "L";
-    sleep 1;
+
     echo "L";
     echo "L";
-    sleep 1;
+
     echo "O";
     echo "O";
-    sleep 1;
+
     echo "Q";
-    sleep 5;
 ) | ./hello > $OUTPUT_DIR/hello.output
 
 # Stop the spy process.

@@ -24,7 +24,7 @@ status "Starting the spy process."
 SPY_PID=$!
 
 # Wait for the spy to get started.
-sleep 2
+#sleep 2
 
 export GNUPGHOME=./dot-gnupg
 
