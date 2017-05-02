@@ -22,16 +22,70 @@ def load_results(path):
     return results
 
 
-# def bar_plot(path):
-    # results = load_results(path)
+def pack_results(results):
+    """ Convert the results in a numpy array """
+    result_list = []
+    for key in results:
+        print key
+        test = results[key]
+        features = []
+        for feature in test:
+            try: 
+                features.append(float(feature[0]))
+            except:
+                features.append(-1.0)
+        
+        result_list.append(features)
 
-    # # for feature in range(21):
-    # for key, value in results.iteritems():
-        # feature = 0
-        # data = value[feature][0]
+    return np.array(result_list)
 
-    # y_pos = np.arange(len
-    # plt.bar(
+
+def extract_features(results, index):
+    feature = []
+    for key in results:
+        recording = results[key]
+        value = float(recording[index][0])
+        # normalize by time
+        value = value / float(recording[13][0])
+        feature.append(value)
+
+    name = results["blur.txt"][index][2]
+    return np.array(feature), name
+
+
+def bar_plot(matrix):
+    fig, axarr = plt.subplots(5, 5)
+
+    y_pos = np.arange(7)
+
+    for x in range(5):
+        for y in range(5):
+            feature = x*5+y
+            points = matrix[:, feature]
+
+            axarr[x, y].bar(y_pos, points, align='center', alpha=0.5)
+
+    plt.show()
+
+
+def bar_plot_alt(results):
+    fig, axarr = plt.subplots(5, 5)
+
+    y_pos = np.arange(8)
+
+    for x in range(5):
+        for y in range(5):
+            points, name = extract_features(results, x*5+y)
+
+            bars = axarr[x, y].bar(y_pos, points, align='center', alpha=0.5)
+            bars[2].set_color('r')
+            axarr[x, y].set_title(name)
+            if x == 4: 
+                axarr[x, y].set_xticklabels(results.keys(), rotation=45)
+            else:
+                axarr[x, y].set_xticklabels([])
+
+    plt.show()
 
 
 def get_datapoints(data, index):
