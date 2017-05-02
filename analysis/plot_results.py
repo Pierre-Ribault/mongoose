@@ -46,7 +46,7 @@ def extract_features(results, index):
         recording = results[key]
         value = float(recording[index][0])
         # normalize by time
-        value = value / float(recording[13][0])
+        value = value / float(recording[2][0])
         feature.append(value)
 
     name = results["blur.txt"][index][2]
@@ -71,14 +71,26 @@ def bar_plot(matrix):
 def bar_plot_alt(results):
     fig, axarr = plt.subplots(5, 5)
 
-    y_pos = np.arange(8)
+    y_pos = np.arange(len(results.keys()))
+
+    fr_index = 0
+    pp_index = 0
+    for index, key in enumerate(results.keys()):
+        if key == "fr_attack.txt":
+            fr_index = index
+        elif key == "pp_attack.txt":
+            pp_index = index
+
+    print results.keys()
 
     for x in range(5):
         for y in range(5):
             points, name = extract_features(results, x*5+y)
 
             bars = axarr[x, y].bar(y_pos, points, align='center', alpha=0.5)
-            bars[2].set_color('r')
+
+            bars[fr_index].set_color('g')
+            bars[pp_index].set_color('r')
             axarr[x, y].set_title(name)
             if x == 4: 
                 axarr[x, y].set_xticklabels(results.keys(), rotation=45)
